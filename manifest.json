@@ -1,0 +1,65 @@
+{
+    "name": "FT_Submission_App",
+    "description": "A Power Apps solution for submitting team member FT package details.",
+    "createdBy": "Generated",
+    "version": "1.0",
+    "screens": [
+        {
+            "name": "MainScreen",
+            "components": [
+                {
+                    "type": "TextInput",
+                    "name": "txtSubmitterBNumber",
+                    "label": "Your B-Number"
+                },
+                {
+                    "type": "Gallery",
+                    "name": "galTeamEntries",
+                    "label": "Added Team Members"
+                },
+                {
+                    "type": "TextInput",
+                    "name": "txtName",
+                    "label": "Team Member Name"
+                },
+                {
+                    "type": "TextInput",
+                    "name": "txtBNumber",
+                    "label": "B-Number"
+                },
+                {
+                    "type": "Dropdown",
+                    "name": "ddlRole",
+                    "label": "Role",
+                    "options": [
+                        "Data Scientist",
+                        "ML Engineer",
+                        "Admin"
+                    ]
+                },
+                {
+                    "type": "Dropdown",
+                    "name": "ddlFTPackage",
+                    "label": "FT Package",
+                    "options": [
+                        "TG-S1-23",
+                        "TG-S2-34",
+                        "TS-S3-23"
+                    ]
+                },
+                {
+                    "type": "Button",
+                    "name": "btnAddTeamMember",
+                    "label": "Add Team Member",
+                    "action": "AddToCollection"
+                },
+                {
+                    "type": "Button",
+                    "name": "btnSubmit",
+                    "label": "Submit",
+                    "action": "SubmitToSharePoint"
+                }
+            ]
+        }
+    ]
+}
